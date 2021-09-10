@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import { store } from './store/store'
 import { Provider } from 'react-redux'
-import LaunchDetails from './components/LaunchDetails/LaunchDetails';
+import LaunchDetails from './pages/LaunchDetails/LaunchDetails';
 import Launches from './pages/Launches';
 
 function App() {
