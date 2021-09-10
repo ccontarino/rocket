@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { store } from './store/store'
 import { Provider } from 'react-redux'
+import LaunchesList from './components/LuchesList';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               {/* <Topics /> */}
             </Route>
             <Route path="/">
+              <LaunchesList/>
               {/* <Home /> */}
             </Route>
           </Switch>
