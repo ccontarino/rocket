@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import { CustomComponent } from './components/CustomComponents';
 import {
   BrowserRouter as Router,
   Switch,

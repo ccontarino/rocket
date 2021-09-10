@@ -22,7 +22,7 @@ function LaunchesList({ launches }) {
     window.location.href=`/${launch.flight_number}/launch-details`
     }
     return (launches.map((launch) =>
-        <div onClick={onClick(launch)} style={styles.rocketContainer} key={launches.id}>
+        <div onClick={()=>{onClick(launch)}} style={styles.rocketContainer} key={launches.id}>
             <div style={styles.rocketTitle} >
                 <Typography variant='h5'>{launch.mission_name}</Typography>
                 <div style={styles.launcheDetail}>
