@@ -12,25 +12,25 @@ import {
 import { store } from './store/store'
 import { Provider } from 'react-redux'
 import LaunchesList from './components/LuchesList';
+import Launches from './pages/Launches';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Provider store={store}>
         <Router>
           <Switch>
             <Route path="/about">
               {/* <About /> */}
             </Route>
-            <Route path="/topics">
-              {/* <Topics /> */}
+            <Route path="/:id/launch-details">
+              {/* <La */}
             </Route>
             <Route path="/">
-              <LaunchesList/>
+              <Launches/>
               {/* <Home /> */}
             </Route>
           </Switch>
-          <CustomComponent />
         </Router>
       </Provider>
     </div>

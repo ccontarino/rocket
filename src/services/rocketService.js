@@ -1,6 +1,6 @@
 import axios from 'axios';
-const urlGetRocket='';
+const urlGetRocket='https://api.spacexdata.com/v3/rockets';
 
-const getRockets=()=>{
-    axios.get('https://api.spacexdata.com/v3/launches');
+export const getRocketsService= async ()=>{
+    return axios.get(urlGetRocket).then((response)=>response.data);
 }
