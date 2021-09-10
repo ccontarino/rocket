@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import { store } from './store/store'
 import { Provider } from 'react-redux'
-import LaunchesList from './components/LuchesList';
+import LaunchDetails from './components/LaunchDetails/LaunchDetails';
 import Launches from './pages/Launches';
 
 function App() {
@@ -24,11 +24,11 @@ function App() {
               {/* <About /> */}
             </Route>
             <Route path="/:id/launch-details">
-              {/* <La */}
+            <LaunchDetails/>
             </Route>
             <Route path="/">
               <Launches/>
-              {/* <Home /> */}
+              
             </Route>
           </Switch>
         </Router>
